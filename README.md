@@ -7,7 +7,7 @@
   2. [Repository](#2-repository)   
     2.1. [Create Git Repository](#21-create-git-repository)
     2.2. [Create Remote Repository](#22-create-remote-repository)
-    2.2. [Add Remote Repository](#22-add-remote-repository)
+    2.3. [Add Remote Repository](#23-add-remote-repository)
   3. [Commands](#3-commands)     
     3.1. [git status](#31-git-status)
     3.2. [git add](#32-git-add)
