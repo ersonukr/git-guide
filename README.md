@@ -3,7 +3,7 @@
 ## Table of Contents
   1. [Setup](#1-basic-setup)  
     1.1. [Installation](#11-git-installation)  
-    1.2. [Configurations](#12-git-configurations)
+    1.2. [Configurations](#12-configurations)
   2. [Repository](#2-repository)   
     2.1 [Create Repository](#21-create-repository)
          
