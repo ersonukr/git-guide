@@ -3,7 +3,9 @@
 ## Table of Contents
   1. [Setup](#1-basic-setup)  
     1.1. [Installation](#11-git-installation)  
-    1.2. [Configurations](#12-git-configurations) 
+    1.2. [Configurations](#12-git-configurations)
+  2. [Repository](#2-repository)   
+    2.1 [Create Repository](#21-create-repository)
          
     
  
@@ -44,3 +46,29 @@ You can see all of the configuration items from:
     
 ```
 
+# 2. Repository
+
+The purpose of Git is to manage a project, or a set of files, as they change over time. Git stores this information in a data structure called a repository.
+
+A git repository contains, among other things, the following:
+
+    
+    * A set of commit objects.
+    * A set of references to commit objects, called heads.
+    
+    
+The Git repository is stored in the same directory as the project itself, in a subdirectory called .git. Note differences from central-repository systems like CVS or Subversion:
+    
+    * There is only one .git directory, in the root directory of the project.
+    * The repository is stored in files alongside the project. There is no central server repository.
+    
+## 2.1. Create Repository
+     
+Goto in your project's directory or create, make sure it is not an empty directory.After that run the following command:
+    
+    ```
+    git init
+    
+    ```
+This will create a .git directory in your project directory.
+        
