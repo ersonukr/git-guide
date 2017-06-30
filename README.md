@@ -12,7 +12,7 @@
 
 This section will be a quick setup guide for installing and using Git and GitHub and how to perform its various functions of creating a user and a repository locally, connecting this repo to the remote host that contains your project to GitHub.
 
-## 11. Installation
+## 1.1. Installation
 
 Install git on an Ubuntu for this you can use the apt package management tools to update your local package index. Afterwards, you can download and install the program:
 
@@ -24,7 +24,7 @@ Install git on an Ubuntu for this you can use the apt package management tools t
 
 This will download and install git to your system. You will still have to complete the configuration steps that we cover in the next section.
 
-## 12. Configurations
+## 1.2. Configurations
 
 Now that you have git installed, you need to do a few things so that the commit messages that will be generated for you will contain your correct information.
 
