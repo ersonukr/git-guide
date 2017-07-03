@@ -15,7 +15,6 @@
     3.3. [git diff](#33-git-diff)  
     3.4. [git commit](#34-git-commit)  
     3.5. [git log](#35-git-log)
-    3.6 [git clone](#36-git-clone)
   4. [Branching](#3-branching)  
   
     
@@ -181,13 +180,6 @@ $ git log
 ```
 
 git log shows a log of all commits starting from HEAD back to the initial commit.
-
-## 3.6. git clone
-
-```
-$  git clone git@github.com:ersonukr/git-guide.git
-```
-git clone creates a new directory and performs the clone operation.
 
 
 # 4. Branching
