@@ -15,7 +15,9 @@
     3.3. [git diff](#33-git-diff)  
     3.4. [git commit](#34-git-commit)  
     3.5. [git log](#35-git-log)  
-  4. [Branching](#3-branching)  
+  4. [Branching](#3-branching) 
+    4.1. [Create Branch](#41-create-branch)  
+    
   
     
    
@@ -187,3 +189,50 @@ git log shows a log of all commits starting from HEAD back to the initial commit
 When you want to add a new feature or fix a bug—no matter how big or how small—you should work on a new branch to 
 encapsulate your changes. This makes sure that unstable code is never committed to the main code base, and it gives you 
 the chance to clean up your feature’s history before merging it into the main branch. 
+
+## 4.1. Create Branch
+
+```
+$ git branch <branch>
+
+```
+
+Above command will create a new branch called <branch>. This does not check out the new branch.
+
+Now, suppose git repository has structure like this:
+
+```
+(A) -- (B) -- (C)
+               |
+             master
+               |
+              HEAD
+
+
+```
+
+where (B) was the version you sent to the conference and (C) is your new revision state. (I’m dropping the arrowheads 
+because they always point to the left.)
+
+To jump back to commit (B) and start new work from there, you first need to know how to reference the commit. You could 
+either use git log to get the SHA1 name of (B), or you could use HEAD^ to retrieve it (as you will remember from the 
+previous page, HEAD^ means the parent of the HEAD commit).
+
+```
+$ git branch [new-head-name] [reference-to-(B)]
+
+```
+This command will create a new head with the given name, and point that head at the requested commit object. If the 
+commit object is left out, it will point to HEAD. 
+
+After that repository commit tree looks like this: 
+
+```
+(A) -- (B) ------- (C)
+        |           |
+   fix-headers    master
+                    |
+                   HEAD
+                   
+```
+
