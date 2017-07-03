@@ -16,8 +16,9 @@
     3.4. [git commit](#34-git-commit)  
     3.5. [git log](#35-git-log)  
   4. [Branching](#3-branching)  
-    4.1. [Create Branch](#41-create-branch)  
-    
+    4.1. [Create Branch](#41-create-branch)
+    4.2. [Branch switching](#42-branch-switching)
+
     
   
     
@@ -239,4 +240,44 @@ After that repository commit tree looks like this:
                    HEAD
                    
 ```
+
+## 4.2. Branch switching
+
+```
+ $ git checkout existing_branch_name
+```
+
+The git checkout command lets you navigate between the branches created by git branch. Checking out a branch updates the
+files in the working directory to match the version stored in that branch, and it tells Git to record all new commits on
+that branch. Think of it as a way to select which line of development you’re working on.
+In order to start working on the headers, you need to set the fix-headers head to be the current head.
+
+Above command does the following:
+* Points HEAD to the commit object specified by [head-name]
+* Rewrites all the files in the directory to match the files stored in the new HEAD commit.
+
+```
+         +-------------- (D)
+        /                 |
+(A) -- (B) -- (C)         |
+               |          |
+             master  fix-headers
+                          |
+                         HEAD
+
+```
+
+You can see now why it’s called “branching”: the commit tree has grown a new branch. Note that the angle of the line
+connecting (B) and (D) is irrelevant; pointers do not store whether they are horizontal or slanted.
+
+if there are any uncommitted changes when you run git checkout, Git will behave very strangely. The strangeness is
+predictable and sometimes useful, but it is best to avoid it. All you need to do, of course, is commit all the new
+changes before checking out the new head.
+
+```
+ $ git checkout  -b new_branch_name
+```
+
+-b option allows to create and switch to a new branch.
+
 
