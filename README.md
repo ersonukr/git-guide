@@ -14,11 +14,12 @@
     3.2. [git add](#32-git-add)  
     3.3. [git diff](#33-git-diff)  
     3.4. [git commit](#34-git-commit)  
-    3.5. [git log](#35-git-log)  
+    3.5. [git log](#35-git-log)
+    3.6. [git clone](#36-git-clone)
   4. [Branching](#3-branching)  
   
     
-   
+  
 # 1. Setup
 
 This section will be a quick setup guide for installing and using Git and GitHub and how to perform its various functions
@@ -181,9 +182,17 @@ $ git log
 
 git log shows a log of all commits starting from HEAD back to the initial commit.
 
+## 3.6. git clone
+
+```
+$  git clone git@github.com:ersonukr/git-guide.git
+```
+git clone creates a new directory and performs the clone operation.
+
 
 # 4. Branching
 
 When you want to add a new feature or fix a bug—no matter how big or how small—you should work on a new branch to 
 encapsulate your changes. This makes sure that unstable code is never committed to the main code base, and it gives you 
 the chance to clean up your feature’s history before merging it into the main branch. 
+
