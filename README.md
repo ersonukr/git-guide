@@ -2,13 +2,13 @@
 
 ## Table of Contents
   1. [Setup](#1-setup)  
-    1.1. [Installation](#1.1-installation)  
-    1.2. [Configurations](#1.2-configurations)
+    1.1. [Installation](#11-installation)  
+    1.2. [Configurations](#12-configurations)
   2. [Repository](#2-repository)   
-    2.1. [Create Git Repository](#2.1-create-git-repository)  
-    2.2. [Create Remote Repository](#2.2-create-remote-repository)  
+    2.1. [Create Git Repository](#21-create-git-repository)  
+    2.2. [Create Remote Repository](#22-create-remote-repository)  
     2.3. [Add Remote Repository](#23-add-remote-repository)  
-    2.4. [Clone Existing Repository](#-clone-existing-repository)
+    2.4. [Clone Existing Repository](#24-clone-existing-repository)
   3. [Commands](#3-commands)     
     3.1. [git status](#31-git-status)  
     3.2. [git add](#32-git-add)  
