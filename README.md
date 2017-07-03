@@ -21,7 +21,7 @@
     
   
     
-   
+
 # 1. Setup
 
 This section will be a quick setup guide for installing and using Git and GitHub and how to perform its various functions
@@ -80,7 +80,8 @@ from central-repository systems like CVS or Subversion:
     
 * There is only one .git directory, in the root directory of the project.
 * The repository is stored in files alongside the project. There is no central server repository.
-    
+
+
 ## 2.1. Create Git Repository
      
 Goto in your project's directory or create, make sure it is not an empty directory.After that run the following command:
@@ -141,6 +142,8 @@ $ git add .
 ```
 If you want to add all the files in your local repository 
 
+![Git staging area](staging_area.png)
+Format: ![Alt Text](url)
 
 ## 3.3. git diff
 
