@@ -20,8 +20,6 @@
     4.2. [Branch switching](#42-branch-switching)
 
     
-  
-    
 
 # 1. Setup
 
