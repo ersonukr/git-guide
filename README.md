@@ -143,7 +143,7 @@ $ git add .
 If you want to add all the files in your local repository 
 
 
-![GitHub Logo](https://www.tutorialspoint.com/git/images/staging_area.png)
+![GitHub Logo](staging_area.png)
 
 ## 3.3. git diff
 
