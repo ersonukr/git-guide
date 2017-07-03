@@ -7,7 +7,8 @@
   2. [Repository](#2-repository)   
     2.1. [Create Git Repository](#2.1-create-git-repository)  
     2.2. [Create Remote Repository](#2.2-create-remote-repository)  
-    2.3. [Add Remote Repository](#23-add-remote-repository)
+    2.3. [Add Remote Repository](#23-add-remote-repository)  
+    2.4. [Clone Existing Repository](#-clone-existing-repository)
   3. [Commands](#3-commands)     
     3.1. [git status](#31-git-status)  
     3.2. [git add](#32-git-add)  
@@ -97,6 +98,19 @@ You can follow this [github article](#https://help.github.com/articles/create-a-
 $ git remote add origin git@github.com:username/new_repo
 
 ```
+
+# 2.4. Clone Existing Repository
+
+git clone is primarily used to point to an existing repo and make a clone or copy of that repo at in a new directory, at
+ another location. The git clone command copies an existing Git repository.
+ 
+```
+$ git clone my-project-url.git
+
+$ cd my-project
+
+``` 
+Cloning automatically creates a remote connection called "origin" pointing back to the original repository. 
 
 # 3. Commands
 
