@@ -14,8 +14,8 @@
     3.2. [git add](#32-git-add)  
     3.3. [git diff](#33-git-diff)  
     3.4. [git commit](#34-git-commit)  
-    3.5. [git log](#35-git-log)
-    3.6. [git clone](#36-git-clone)
+      3.5. [git log](#35-git-log)
+        3.6 [git clone](#36-git-clone)
   4. [Branching](#3-branching)  
   
     
