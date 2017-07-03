@@ -15,9 +15,12 @@
     3.3. [git diff](#33-git-diff)  
     3.4. [git commit](#34-git-commit)  
     3.5. [git log](#35-git-log)  
-  4. [Branching](#3-branching)  
-    4.1. [Create Branch](#41-create-branch)  
+  4. [Branching](#4-branching)
+    4.1. [Create Branch](#41-create-branch)
     4.2. [Branch switching](#42-branch-switching)
+    4.3. [Listing branches](#43-listing-branches)
+    4.4. [Renaming branch ](#44-renaming-branch)
+    4.5. [Destroy branch](#45-destroy_branch)
 
     
 
@@ -142,7 +145,7 @@ $ git add .
 If you want to add all the files in your local repository 
 
 
-![GitHub Logo](staging_area.png)
+![Staging](staging_area.png)
 
 ## 3.3. git diff
 
@@ -277,5 +280,59 @@ changes before checking out the new head.
 ```
 
 -b option allows to create and switch to a new branch.
+
+git checkout works hand-in-hand with git branch. When you want to start a new feature, you create a branch with git
+branch,then check it out with git checkout. You can work on multiple features in a single repository by switching
+between them with git checkout.
+
+
+![Checkout Logo](checkout01.svg)
+
+
+## 4.3. Listing branches
+
+```
+ $ git branch
+```
+List all of the branches in your repository locally.
+
+```
+$  git branch -r
+```
+List all the branches present on remote.
+
+```
+$ git branch -a
+```
+List all the branches from remote as well as local.
+
+
+## 4.4. Renaming branch
+
+```
+$ git branch -m new_name
+```
+
+Rename the current branch to  new_name
+
+## 4.5. Destroy branch
+
+```
+ $ git branch -d branch_name
+```
+Delete the specified branch. This is a “safe” operation in that Git prevents you from deleting the branch if it has
+unmerged changes.
+
+```
+ $ git branch -D branch_name
+```
+Force delete the specified branch, even if it has unmerged changes. This is the command to use if you want to permanently
+throw away all of the commits associated with a particular line of development.
+
+```
+ $ git push origin :branch_name
+```
+where origin is remote_name.
+Delete the specific branch from remote.
 
 
