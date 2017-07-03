@@ -19,7 +19,7 @@
   4. [Branching](#3-branching)  
   
     
-  
+
 # 1. Setup
 
 This section will be a quick setup guide for installing and using Git and GitHub and how to perform its various functions
