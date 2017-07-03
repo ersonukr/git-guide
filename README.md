@@ -142,8 +142,8 @@ $ git add .
 ```
 If you want to add all the files in your local repository 
 
-![Git staging area](staging_area.png)
-Format: ![Alt Text](url)
+
+![GitHub Logo](https://www.tutorialspoint.com/git/images/staging_area.png)
 
 ## 3.3. git diff
 
