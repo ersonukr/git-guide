@@ -15,7 +15,7 @@
     3.3. [git diff](#33-git-diff)  
     3.4. [git commit](#34-git-commit)  
     3.5. [git log](#35-git-log)  
-  4. [Branching](#3-branching) 
+  4. [Branching](#3-branching)  
     4.1. [Create Branch](#41-create-branch)  
     
     
