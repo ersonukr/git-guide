@@ -16,11 +16,15 @@
     3.4. [git commit](#34-git-commit)  
     3.5. [git log](#35-git-log)
   4. [Branching](#4-branching)  
-    4.1. [Create Branch](#41-create-branch)  
+    4.1. [Create branch](#41-create-branch)  
     4.2. [Branch switching](#42-branch-switching)  
     4.3. [Listing branches](#43-listing-branches)  
     4.4. [Renaming branch ](#44-renaming-branch)  
     4.5. [Destroy branch](#45-destroy_branch)
+  5. [Merging](#5-merging)  
+    5.1. [Fast forward merge](#51-fast-forward-merge)  
+    5.2. [3-way merge](#52-3-way-merge)  
+    5.3. [Resolving Conflicts](#53-resolving-conflicts)
 
     
 
@@ -334,5 +338,69 @@ throw away all of the commits associated with a particular line of development.
 ```
 where origin is remote_name.
 Delete the specific branch from remote.
+
+# 5. Merging
+
+Once you’ve finished developing a feature in an isolated branch, it's important to be able to get it back into the main
+ code base,so that everyone can use it. You can do so with the git merge or git pull command.
+ 
+```
+ $ git merge <branch>
+```
+
+Above command merge the specified branch into the current branch. Git will determine the merge algorithm automatically.
+
+```
+ $ git merge --no-ff <branch>
+```
+
+Above command merge the specified branch into the current branch, but always generate a merge commit (even if it was a fast-forward 
+merge). This is useful for documenting all merges that occur in your repository.
+
+```
+ $ git pull <remote_name> <branch> 
+```
+
+Above command merge the specified branch into the current branch.
+
+## 5.1. Fast forward merge
+
+A fast-forward merge can occur when there is a linear path from the current branch tip to the target branch. Instead of 
+“actually” merging the branches, all Git has to do to integrate the histories is move (i.e., “fast forward”) the current
+ branch tip up to the target branch tip. This effectively combines the histories, since all of the commits reachable 
+from the target branch are now available through the current one. For example, a fast forward merge of some-feature into
+ master would look something like the following:
+ 
+ 
+![Fast forward merge](ff_merging.svg)
+
+
+## 5.2. 3-way merge
+
+Now suppose we have not linear path to the target branch i.e, branch is diverged. In this case a fast-forward merge is not 
+possible if the branches have diverged. When there is not a linear path to the target branch, Git has no choice but to 
+combine them via a 3-way merge. 3-way merges use a dedicated commit to tie together the two histories. The nomenclature 
+comes from the fact that Git uses three commits to generate the merge commit: the two branch tips and their common 
+ancestor.
+
+
+![3-way merge](3_way.svg)
+
+In 3-way merge, there is may be occur merging conflicts.
+
+## 5.3. Resolving Conflicts
+
+If the two branches you're trying to merge both changed the same part of the same file, Git won't be able to figure out 
+which version to use. When such a situation occurs, it stops right before the merge commit so that you can resolve the 
+conflicts manually.
+
+Merge conflicts will only occur in the event of a 3-way merge. It’s not possible to have conflicting changes in a 
+fast-forward merge.
+
+To resolve the commit, edit the files to fix the conflicting changes. Then run git add to add the resolved files, and 
+run git commit to commit the repaired merge. Git remembers that you were in the middle of a merge, so it sets the 
+parents of the commit correctly.
+
+
 
 
