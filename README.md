@@ -25,6 +25,7 @@
     5.1. [Fast forward merge](#51-fast-forward-merge)  
     5.2. [3-way merge](#52-3-way-merge)  
     5.3. [Resolving Conflicts](#53-resolving-conflicts)
+  6. [Rebasing](#6-rebasing)
 
     
 
@@ -401,4 +402,22 @@ parents of the commit correctly.
 
 
 
+# 6. Rebasing
 
+```
+$ git checkout sample_branch
+$ git rebase master
+```
+![merge](branch.png)
+
+This moves the entire sample_branch branch to begin on the tip of the master branch, effectively incorporating all of the new
+commits in master. But, instead of using a merge commit, rebasing re-writes the project history by creating brand new
+commits for each commit in the original branch.
+
+
+![rebase](rebasing.png)
+
+
+The major benefit of rebasing is that you get a much cleaner project history. First, it eliminates the unnecessary merge
+commits required by git merge. Second, as you can see in the above diagram, rebasing also results in a perfectly linear
+project history—you can follow the tip of feature all the way to the beginning of the project without any forks
