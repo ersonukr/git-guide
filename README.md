@@ -26,8 +26,10 @@
     5.2. [3-way merge](#52-3-way-merge)  
     5.3. [Resolving Conflicts](#53-resolving-conflicts)
   6. [Rebasing](#6-rebasing)
-
-    
+  7. [Collaborating](#7-collaborating)
+    7.1. [Syncing](#71.syncing)
+       7.1.1. [Git remote](#711.git-remote)
+       7.1.2. [Git fetch](#712.git-fetch)
 
 # 1. Setup
 
@@ -421,3 +423,57 @@ commits for each commit in the original branch.
 The major benefit of rebasing is that you get a much cleaner project history. First, it eliminates the unnecessary merge
 commits required by git merge. Second, as you can see in the above diagram, rebasing also results in a perfectly linear
 project history—you can follow the tip of feature all the way to the beginning of the project without any forks
+
+
+# 7. Collaborating
+
+## 7.1. Syncing
+
+### 7.1.1. Git remote
+
+```
+$ git remote
+```
+The git remote command lets you create, view, and delete connections to other repositories
+
+
+```
+$ git remote -v
+```
+List the remote connections you have to other repositories.
+
+
+```
+$ git remote add <name> <url>
+```
+
+Create a new connection to a remote repository.
+
+```
+$ git remote rm <name>
+```
+Remove the connection to the remote repository called <name>
+
+```
+$ git remote rename <old-name> <new-name>
+```
+Rename a remote connection from <old-name> to <new-name>
+
+
+```
+$ git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
+```
+Change your remote's URL.
+
+### Git fetch
+
+```
+$ git fetch <remote>
+```
+Fetch all of the branches from the repository.
+
+```
+$ git fetch <remote> <branch>
+```
+Fetch only  the specified branch.
+
