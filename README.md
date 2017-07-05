@@ -28,8 +28,8 @@
   6. [Rebasing](#6-rebasing)
   7. [Collaborating](#7-collaborating)
     7.1. [Syncing](#71.syncing)
-    7.1.1. [Git remote](#711.git-remote)
-    7.1.2. [Git fetch](#712.git-fetch)
+      7.1.1. [Git remote](#711.git-remote)
+      7.1.2. [Git fetch](#712.git-fetch)
 
 # 1. Setup
 
