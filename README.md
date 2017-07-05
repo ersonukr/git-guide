@@ -27,10 +27,11 @@
     5.3. [Resolving Conflicts](#53-resolving-conflicts)
   6. [Rebasing](#6-rebasing)
   7. [Collaborating](#7-collaborating)  
-    7.1. [Syncing](#71-syncing)    
+    7.1. [Syncing](#71-syncing)
      * [Git remote](#711-git-remote)
      * [Git fetch](#712-git-fetch)
-
+     * [Git pull](#713-git-pull)
+     * [Git push](#714-git-push)
 # 1. Setup
 
 This section will be a quick setup guide for installing and using Git and GitHub and how to perform its various functions
@@ -455,7 +456,7 @@ $ git remote rm <name>
 Remove the connection to the remote repository called <name>
 
 ```
-$ git remote rename <old-name> <new-name>
+$ git rename <old-name> <new-name>
 ```
 Rename a remote connection from <old-name> to <new-name>
 
@@ -468,12 +469,35 @@ Change your remote's URL.
 ### 7.1.2. Git fetch
 
 ```
-$ git fetch <remote>
+$ git fetch <remote_name>
 ```
 Fetch all of the branches from the repository.
 
 ```
-$ git fetch <remote> <branch>
+$ git fetch <remote_name> <branch>
 ```
 Fetch only  the specified branch.
 
+```
+$ git fetch --prune <remote_name>
+```
+Removes all the local branches which no longer exists on remote.
+
+
+### 7.1.3. Git pull
+
+```
+$ git pull <remote_name>
+```
+
+Fetch the specified remote’s copy of the current branch and immediately merge it into the local copy.
+This is the same as git fetch <remote_name> followed by git merge origin/<current-branch>
+
+
+### 7.1.4. Git push
+
+```
+$ git push <remote_name> <branch_name>
+```
+
+Push specified branch_name to remote_name
