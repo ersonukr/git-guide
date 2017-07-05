@@ -401,6 +401,4 @@ run git commit to commit the repaired merge. Git remembers that you were in the 
 parents of the commit correctly.
 
 
-
-
 .. include:: checkout.svg
