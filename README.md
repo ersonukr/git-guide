@@ -290,7 +290,6 @@ branch,then check it out with git checkout. You can work on multiple features in
 between them with git checkout.
 
 
-![Checkout Logo](checkout01.svg)
 
 
 ## 4.3. Listing branches
@@ -404,3 +403,4 @@ parents of the commit correctly.
 
 
 
+.. include:: checkout.svg
