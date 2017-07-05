@@ -370,7 +370,7 @@ from the target branch are now available through the current one. For example, a
  master would look something like the following:
  
  
-![Fast forward merge](ff_merging.svg)
+![Fast forward merge](ff_merge.png)
 
 
 ## 5.2. 3-way merge
@@ -382,7 +382,7 @@ comes from the fact that Git uses three commits to generate the merge commit: th
 ancestor.
 
 
-![3-way merge](3_way.svg)
+![3-way merge](3_way_merging.jpg)
 
 In 3-way merge, there is may be occur merging conflicts.
 
