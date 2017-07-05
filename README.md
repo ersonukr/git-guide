@@ -465,7 +465,7 @@ $ git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
 ```
 Change your remote's URL.
 
-### Git fetch
+### 7.1.2. Git fetch
 
 ```
 $ git fetch <remote>
