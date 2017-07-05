@@ -415,7 +415,7 @@ commits in master. But, instead of using a merge commit, rebasing re-writes the 
 commits for each commit in the original branch.
 
 
-![rebase](rebasing.png)
+![rebase](rebase.png)
 
 
 The major benefit of rebasing is that you get a much cleaner project history. First, it eliminates the unnecessary merge
