@@ -289,8 +289,7 @@ git checkout works hand-in-hand with git branch. When you want to start a new fe
 branch,then check it out with git checkout. You can work on multiple features in a single repository by switching
 between them with git checkout.
 
-![Checkout](checkout01.png)
-
+![checkout image](checkout.jpg)
 
 ## 4.3. Listing branches
 
